@@ -1,0 +1,13 @@
+# More information about the configuration file can be found here:
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html
+version = 0.1
+
+[default]
+[default.global.parameters]
+stack_name = "myTestFunction-stack"
+region = "us-east-1"
+[default.deploy.parameters]
+resolve_s3 = true
+s3_prefix = "myTestFunction-stack"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# Terraform local state and working directories
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files often contain secrets
+*.tfvars
+*.tfvars.json
+*.tfplan
+*.tfplan.json
+*.plan
+*.out
+
+# Local environment and secret material
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+
+# Terraform CLI local config
+.terraformrc
+terraform.rc
+
+# AWS SAM local build artifacts
+**/.aws-sam/
+samconfig.local.toml
+
+# Generated deployment packages
+terraform-lambda-project/terraform-example/hello/*.zip
+
+# Local editor metadata
+.vscode/
+.idea/

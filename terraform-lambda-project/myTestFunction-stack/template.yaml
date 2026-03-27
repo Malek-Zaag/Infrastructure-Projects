@@ -1,0 +1,27 @@
+Transform: AWS::Serverless-2016-10-31
+Parameters: {}
+Resources:
+  LambdaFunctionFunctionmyTestFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      MemorySize: 128
+      Description: ''
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
+      Handler: index.handler
+      Role: arn:aws:iam::990162768441:role/service-role/myTestFunction-role-ixhr8osw
+      FileSystemConfigs: []
+      FunctionName: myTestFunction
+      Runtime: nodejs24.x
+      PackageType: Zip
+      LoggingConfig:
+        LogFormat: Text
+        LogGroup: /aws/lambda/myTestFunction
+      RecursiveLoop: Terminate
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+        - x86_64
+      Tracing: PassThrough
+      CodeUri: LambdaFunctionFunctionmyTestFunction
