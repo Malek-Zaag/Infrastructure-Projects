@@ -35,6 +35,8 @@ terraform.rc
 
 # AWS SAM local build artifacts
 **/.aws-sam/
+**/event.json
+**/samconfig.toml
 samconfig.local.toml
 
 # Generated deployment packages
