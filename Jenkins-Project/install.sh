@@ -1,6 +1,9 @@
 
 
-# install jenkins 
+# install jenkins on ec2 instance as a docker container
+
+
+
 
 docker run -d --name jenkins --restart unless-stopped \
 -p 8080:8080 -p 50000:50000 \
